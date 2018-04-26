@@ -1,0 +1,7 @@
+name: "My Website"
+output_dir: "."
+navbar:
+    title: "Trevor's Data Visualization Website"
+output:
+    html_document:
+        theme: cosmo

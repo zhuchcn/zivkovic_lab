@@ -1,0 +1,23 @@
+---
+title: "Project Index"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=F}
+root = 'http://18.188.168.203/'
+```
+
+*This is Trevor's data visualization home page for all the projects that I have been involved with. Only 2 projects now, but the egg study will be online somehow in the summer*
+
+*Please contact me(chhzhu@ucdavis.edu) if you have any idea or question!*
+
+*Have fun!*
+
+* [Fast Food Study](`r paste0(root, "fast_food_study/index.Rmd")`)
+
+* [Alzheimer Study](`r paste0(root, "alzheimer/index.Rmd")`)
+
+* Egg Study (will come soon!)
