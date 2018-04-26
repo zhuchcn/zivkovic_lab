@@ -16,8 +16,8 @@ root = 'http://18.188.168.203/'
 
 *Have fun!*
 
-* [Fast Food Study](`r paste0(root, "fast_food_study/index.Rmd")`)
+* [Fast Food Study](`r paste0(root, "ffs/website/_site/index.html")`)
 
-* [Alzheimer Study](`r paste0(root, "alzheimer/index.Rmd")`)
+* [Alzheimer Study](`r paste0(root, "alzheimer/R/index.Rmd")`)
 
 * Egg Study (will come soon!)
