@@ -20,4 +20,4 @@ root = 'http://18.188.168.203/'
 
 * [Alzheimer Study](`r paste0(root, "alzheimer/R/index.Rmd")`)
 
-* Egg Study (will come soon!)
+* [Egg Study](`r paste0(root, "egg/_site/index.html")`)
