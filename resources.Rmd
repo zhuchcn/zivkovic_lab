@@ -1,0 +1,55 @@
+\
+\
+\
+
+
+*This is a collection of all the good resources for bioinformatics and data science that I used or saw during my own learning.* 
+\
+\
+
+
+# MOOC
+
+MOOC is an extremely good way to learn coding, algorithm, or computation skills for me. Here I listed some good courses that I took.
+
+* [Data Science Specialization @ Coursera, by JHU](https://www.coursera.org/specializations/jhu-data-science)
+    
+    + This is a very thorough and well-structured series courses with 10 courses about statistics and R, hosted by the department od Biostatistics in John Hopkins University. It stats with the very basic R programming, then into statistics theoreis (distribution and linear model). It has a very inspiring course called "reproducible research" which I think is extremely necessary for us when handling with big datasets.
+\
+\
+    + Same as the one below, this specialization is free to audit, and $49 per month is you enroll it to get certificates. The first week is free, and I finished the 9/10 in only two months.
+\
+\
+* [Genomic Data Science @ Coursera, by JHU](https://www.coursera.org/specializations/genomic-data-science)
+
+    + This is also a series course with 8 courses, also hosted by JHU. This course is extremely useful especially when you want to work with microbiome data, proteomic data, or any HTS(high through-put sequencing) data. It covers the NGS sequencing theory, and the genomic sequences alignment algorithm (with python), unix system operation (most genomic tools were developed in linux platform, such as the QIIME2), and then data analysis.
+\
+\
+* [Bioinformaitcs Specialization @ Coursera, by UCSD](https://www.coursera.org/specializations/bioinformatics)
+
+    + This is an replacement of the course above. It was recommended by many people but I did take it.
+\
+\
+* [Python for Everybody @ Coursera, by UMich](https://www.coursera.org/specializations/python)
+
+    + If you want to gain some python skill, this is a great entry level python course.
+\
+\
+
+# Tutorials
+
+* [DADA2 Tutorial](https://benjjneb.github.io/dada2/tutorial.html)
+
+* [QIIME2](docs.qiime2.org/)
+
+    + Qiime2 is actively under developing, with new version released every other month. If you want to use DADA2, I'll recommend the R version, because by the time that I wrote this, qiime2's DADA2 function is much slower (plus there is some problem that we haven't solved of using qiime2's dada2). However, qiime2 is embedded with the fasttree tool. So if you want to use it to build a phylogenic tree, please read the tutorial in qiime2 website, with the latest version.
+\
+\
+* [PICRUSt Tutorial with de novo Variants](https://github.com/LangilleLab/microbiome_helper/wiki/PICRUSt-Tutorial-with-de-novo-Variants)
+
+    + This tutorial allows you to use dada2 output to do function prediction with PICRUSt.
+\
+\
+* [Phyloseq](http://joey711.github.io/phyloseq/)
+
+    + Phyloseq is a package that dedicated for microbiome data analysis. It can calculate the alpha diversity, and beta diversity with different methods (unifrac, bray curtis, etc.). But it does not have a phylogenic tree building method (not as I know) which is required by the unifrac methdo. So you will need to use the qiime2 before phyloseq. However, the downside of the phyloseq is that it's plotting functions are very capsulized, and not very flexible. If you want to make graphes, I would suggest to use phyloseq only do the calculation, and use ggplot2 to do the visualization.

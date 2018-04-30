@@ -11,7 +11,7 @@
 
 
 
-<title>Project Index</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -192,19 +192,72 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Project Index</h1>
 
 </div>
 
 
-<p><em>This is Trevor’s data visualization home page for all the projects that I have been involved with. Only 2 projects now, but the egg study will be online somehow in the summer</em></p>
-<p><em>Please contact me(<a href="mailto:chhzhu@ucdavis.edu">chhzhu@ucdavis.edu</a>) if you have any idea or question!</em></p>
-<p><em>Have fun!</em></p>
+<p><br />
+<br />
+<br />
+</p>
+<p><em>This is a collection of all the good resources for bioinformatics and data science that I used or saw during my own learning.</em><br />
+<br />
+</p>
+<div id="mooc" class="section level1">
+<h1>MOOC</h1>
+<p>MOOC is an extremely good way to learn coding, algorithm, or computation skills for me. Here I listed some good courses that I took.</p>
 <ul>
-<li><p><a href="http://18.188.168.203/ffs/website/_site/index.html">Fast Food Study</a></p></li>
-<li><p><a href="http://18.188.168.203/alzheimer/R/index.Rmd">Alzheimer Study</a></p></li>
-<li><p><a href="http://18.188.168.203/egg/_site/index.html">Egg Study</a></p></li>
+<li><p><a href="https://www.coursera.org/specializations/jhu-data-science">Data Science Specialization @ Coursera, by JHU</a></p>
+<ul>
+<li>This is a very thorough and well-structured series courses with 10 courses about statistics and R, hosted by the department od Biostatistics in John Hopkins University. It stats with the very basic R programming, then into statistics theoreis (distribution and linear model). It has a very inspiring course called “reproducible research” which I think is extremely necessary for us when handling with big datasets.<br />
+<br />
+</li>
+<li>Same as the one below, this specialization is free to audit, and $49 per month is you enroll it to get certificates. The first week is free, and I finished the 9/10 in only two months.<br />
+<br />
+</li>
+</ul></li>
+<li><p><a href="https://www.coursera.org/specializations/genomic-data-science">Genomic Data Science @ Coursera, by JHU</a></p>
+<ul>
+<li>This is also a series course with 8 courses, also hosted by JHU. This course is extremely useful especially when you want to work with microbiome data, proteomic data, or any HTS(high through-put sequencing) data. It covers the NGS sequencing theory, and the genomic sequences alignment algorithm (with python), unix system operation (most genomic tools were developed in linux platform, such as the QIIME2), and then data analysis.<br />
+<br />
+</li>
+</ul></li>
+<li><p><a href="https://www.coursera.org/specializations/bioinformatics">Bioinformaitcs Specialization @ Coursera, by UCSD</a></p>
+<ul>
+<li>This is an replacement of the course above. It was recommended by many people but I did take it.<br />
+<br />
+</li>
+</ul></li>
+<li><p><a href="https://www.coursera.org/specializations/python">Python for Everybody @ Coursera, by UMich</a></p>
+<ul>
+<li>If you want to gain some python skill, this is a great entry level python course.<br />
+<br />
+</li>
+</ul></li>
 </ul>
+</div>
+<div id="tutorials" class="section level1">
+<h1>Tutorials</h1>
+<ul>
+<li><p><a href="https://benjjneb.github.io/dada2/tutorial.html">DADA2 Tutorial</a></p></li>
+<li><p><a href="docs.qiime2.org/">QIIME2</a></p>
+<ul>
+<li>Qiime2 is actively under developing, with new version released every other month. If you want to use DADA2, I’ll recommend the R version, because by the time that I wrote this, qiime2’s DADA2 function is much slower (plus there is some problem that we haven’t solved of using qiime2’s dada2). However, qiime2 is embedded with the fasttree tool. So if you want to use it to build a phylogenic tree, please read the tutorial in qiime2 website, with the latest version.<br />
+<br />
+</li>
+</ul></li>
+<li><p><a href="https://github.com/LangilleLab/microbiome_helper/wiki/PICRUSt-Tutorial-with-de-novo-Variants">PICRUSt Tutorial with de novo Variants</a></p>
+<ul>
+<li>This tutorial allows you to use dada2 output to do function prediction with PICRUSt.<br />
+<br />
+</li>
+</ul></li>
+<li><p><a href="http://joey711.github.io/phyloseq/">Phyloseq</a></p>
+<ul>
+<li>Phyloseq is a package that dedicated for microbiome data analysis. It can calculate the alpha diversity, and beta diversity with different methods (unifrac, bray curtis, etc.). But it does not have a phylogenic tree building method (not as I know) which is required by the unifrac methdo. So you will need to use the qiime2 before phyloseq. However, the downside of the phyloseq is that it’s plotting functions are very capsulized, and not very flexible. If you want to make graphes, I would suggest to use phyloseq only do the calculation, and use ggplot2 to do the visualization.</li>
+</ul></li>
+</ul>
+</div>
 
 
 

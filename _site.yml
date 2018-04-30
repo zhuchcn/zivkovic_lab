@@ -2,6 +2,9 @@ name: "My Website"
 output_dir: "."
 navbar:
     title: "Trevor's Data Visualization Website"
+    left:
+      - text: "Resources"
+        href: resources.html
 output:
     html_document:
         theme: cosmo
